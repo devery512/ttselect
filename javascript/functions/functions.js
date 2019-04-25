@@ -22,17 +22,17 @@
 //-------------------Excercise 2 ----------------------------
 
 // (Beats Scissors),paper(Beats Rock),scissors(Beats Paper)
-var hands = ['rock','paper','scissors']
 var playerone = prompt("Please enter player one's name.");
 var playertwo = prompt("Please enter player two's name.");
 var topFive = false;
-//------Object for players--------------------
+//------Object for players and hand choices--------------------
 	var info =
 		{
 			player :[
 						{name: playerone, hand: gethand(), score: {w:0}},
 						{name: playertwo, hand: gethand(), score: {w:0}}
 					],
+			hands: ['rock','paper','scissors'],
 		}
 
 //-------Functions------------------------
@@ -41,15 +41,15 @@ var topFive = false;
 			var x = parseInt((Math.random()*3))
 			if (x == 0 )
 				{
-					x = hands[0];	
+					x = info.hands[0];	
 				}
 			else if(x == 1)
 				{
-					x = hands[1];
+					x = info.hands[1];
 				}
 			else
 				{
-					x = hands[2];
+					x = info.hands[2];
 				}
 			return x;
 		};
