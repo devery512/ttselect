@@ -23,8 +23,8 @@
 
 // (Beats Scissors),paper(Beats Rock),scissors(Beats Paper)
 var hands = ['rock','paper','scissors']
-var playerone = "blah" //prompt("Please enter player one's name.");
-var playertwo = "blahblah" //prompt("Please enter player two's name.");
+var playerone = prompt("Please enter player one's name.");
+var playertwo = prompt("Please enter player two's name.");
 var topFive = false;
 //------Object for players--------------------
 	var info =
